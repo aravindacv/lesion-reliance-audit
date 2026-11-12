@@ -14,6 +14,8 @@ from lraudit import AuditConfig, audit
 from lraudit.stats import er_vs_blob
 
 rng = np.random.default_rng(0)
+torch.manual_seed(0)
+torch.use_deterministic_algorithms(True)
 H = W = 96
 N_CLASSES = 3
 
