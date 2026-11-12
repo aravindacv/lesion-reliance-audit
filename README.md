@@ -17,7 +17,7 @@ The protocol is described in:
 ## Install
 
 ```bash
-git clone https://github.com/<your-account>/lesion-reliance-audit.git
+git clone https://github.com/aravindacv/lesion-reliance-audit.git
 cd lesion-reliance-audit
 pip install -e .
 ```
@@ -59,7 +59,7 @@ res.per_image.to_csv("audit_per_image.csv")
 python examples/demo_synthetic.py
 ```
 
-The demo trains a small CNN on synthetic images in which the class is visible both in a central "lesion" and in a background tint. The audit shows a saliency map that hits the lesion (pointing game 1.0, ER three times the mask area) yet never beats the centre prior, while discrimination is fully retained after the lesion is erased: the model uses the background shortcut.
+The demo trains a small CNN on synthetic images in which the class is visible both in a central "lesion" and in a background tint. With the fixed seeds the audit reports a saliency map that looks lesion-focused (ER 0.27 against a mask area of 0.11; saliency peak inside the lesion in 67% of images) yet beats the image-blind centre prior on only 5% of images, and discrimination is fully retained (100%) after the lesion is erased: the model uses the background shortcut.
 
 ## Defaults
 
