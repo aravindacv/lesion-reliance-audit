@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "lraudit: interventional audit of lesion reliance in medical image classifiers"
+version: 0.1.0
+date-released: 2026-11-12
+license: MIT
+authors:
+  - family-names: "C V"
+    given-names: "Aravinda"
+    orcid: "https://orcid.org/0000-0003-4588-4105"
+  - family-names: "Raja"
+    given-names: "Kiran Bylappa"
+  - family-names: "K R"
+    given-names: "Udaya Kumara Reddy"
+  - family-names: "B C"
+    given-names: "Arjun"
+  - family-names: "Rajendran"
+    given-names: "Anand"
